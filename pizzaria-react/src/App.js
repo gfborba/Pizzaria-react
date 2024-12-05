@@ -1,30 +1,17 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Products from './components/pages/Products';
 import Contact from './components/pages/Contact';
 
 import Container from './components/layout/Container'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/products">Produtos</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contato</Link>
-          </li>
-        </ul>
-      </nav>
+     <Navbar />
 
       <Container customClass = "min-height">
         <Routes>
@@ -33,11 +20,11 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      
       </Container>
       
-      <footer>
-        <p>Footer</p>
-      </footer>
+      <Footer />
     </Router>
   );
 }
