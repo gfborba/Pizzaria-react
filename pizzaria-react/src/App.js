@@ -4,6 +4,8 @@ import About from './components/pages/About';
 import Products from './components/pages/Products';
 import Contact from './components/pages/Contact';
 
+import Container from './components/layout/Container'
+
 function App() {
   return (
     <Router>
@@ -23,12 +25,16 @@ function App() {
           </li>
         </ul>
       </nav>
-      <Routes>
+
+      <Container customClass = "min-height">
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      </Container>
+      
       <footer>
         <p>Footer</p>
       </footer>
