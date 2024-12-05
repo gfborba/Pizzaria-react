@@ -1,14 +1,78 @@
-.products_container{
-    width: 450px;
-    margin: 0 auto;
-    padding: 3em;
+.product_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.products_container h1{
-    margin-bottom: 0.5em;
+.product_container h1{
+    margin-bottom: 0.2em;
 }
 
-.products_container p{
-    color: #7b7b7b;
+.product_container h1:hover{
+    color: #ffbb33;
+    text-shadow:1px 2px 2px #000000
+}
+
+.product_options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0em;
+}
+
+.product_options button{
+    padding: 1em 4em;
+    background-color: #222;
+    color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.product_options button:hover{
+    background-color: #ffbb33;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2em 5em;
+
+}
+
+.product_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fdb6264d;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.product_info p{
+    background-color: #222222a1;
+    width: 50%;
+    text-align: justify;
+    padding: 3em;
+    color: #FFFF;
+    font-weight: bold;
+    text-shadow:1px 1px 1px #868686;
+    line-height: 25px;
+
+}
+
+.product_info h2{
+    padding: 3em ;
+    height: 250px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:1px 2px 2px #ffbb33;
+   
 }

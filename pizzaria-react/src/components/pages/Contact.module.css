@@ -1,0 +1,43 @@
+.contact_container{
+    width: 700px;
+    margin: 0 auto;
+    padding: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid black;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #E1CE7A;
+}
+
+.contact_container h1{
+    margin-bottom: 0.5em;
+}
+
+.contact_container h1:hover{
+    color: #ffbb33;
+    text-shadow:1px 2px 2px #000000
+    
+}
+
+.contact_container hr{
+    color: black;
+    background-color: black;
+    border: none;
+    height: 3px;
+    margin-bottom: 15px;
+}
+
+.contacts_container p{
+    color: #7b7b7b;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratolixo{
+    width: 500px;
+    height: 500px;
+}
